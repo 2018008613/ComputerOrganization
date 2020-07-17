@@ -1,0 +1,6 @@
+	beq 0 0 2	test for branch hazard
+	add 1 1 2	when beq is in mem, restore if id ex for noop 
+	lw 1 2 2
+	add 0 0 1
+	add 0 0 2
+	halt

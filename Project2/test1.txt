@@ -1,0 +1,4 @@
+	lw 0 1 data	test for data hazard
+	add 1 1 2	stall this add one cycle and mem forwarding
+	halt
+data	.fill 10
